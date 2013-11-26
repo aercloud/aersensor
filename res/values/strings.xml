@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- activity_main.xml string elements -->
+    <string name="app_name">aersensor</string>
+    <string name="aeris_logo">aeris_logo</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="app_settings">Settings</string>
+    <string name="initalizing">Initalizing...</string>
+    <string name="connected">Connected!</string>
+    <string name="streaming_data">Streaming Data...</string>
+    <string name="disconnecting">Disconnecting...</string>
+    <string name="idle">Idle...</string>
+    <string name="datanull">Data: NULL</string>
+    <string name="longpollnotifications">Long Poll Notifications:</string>
+    <string name="datasampletext">Data Sample:</string>
+    <string name="datastatus">Data Stream Status:</string>
+    
+    <!-- activity_main_perferences.xml string elements -->
+    <string name="debug">Debug</string>
+    <string name="timeIntervals">Timers</string>
+    <string name="feedTimeInterval">Data Feed Rate</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="secure">Secure</string>
+    <string name="connectionInformation">Connection Information</string>
+    <string name="debugPreferences">Debug Preferences</string>
+    <string name="baseURL">Base URL</string>
+    <string name="accountID">Account ID</string>
+    <string name="deviceID">Scl (Device) ID</string>
+    <string name="feedID">Container ID</string>
+    <string name="apiKey">API Key</string>
+
+    <string name="queuePreferences">Queue Service</string>
+    <string name="lphost">Host</string>
+    <string name="lpport">Port</string>
+</resources>

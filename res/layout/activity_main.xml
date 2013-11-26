@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="net.aeris.aersensor.MainActivity" 
+    android:background="@drawable/gradient_background">
+	
+    <Button
+        android:id="@+id/start_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/default_button_gradient"
+        android:minHeight="40dp"
+        android:minWidth="200dp"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/statustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/start_stop_button"
+        android:layout_marginTop="25dp"
+        android:text="@string/idle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:id="@+id/datasample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statustext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/datasampletext"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+    <ScrollView
+        android:id="@+id/datatextscrollview"
+    	android:layout_width="fill_parent"
+    	android:layout_height="125dp"
+    	android:layout_below="@+id/datasample"
+    	android:layout_centerHorizontal="true" >
+    	<TextView
+	        android:id="@+id/datatext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="#FFFFFF" />
+	</ScrollView>
+	<TextView 
+	    android:id="@+id/dataStatus"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_below="@+id/datatextscrollview"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="#FFFFFF"
+	    android:text="@string/datastatus"
+	     />
+	<TextView 
+	    android:id="@+id/longpollnotification"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/dataStatus"
+	    android:layout_marginLeft="5dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="#FFFFFF"
+	    android:text="@string/longpollnotifications" />
+	<ScrollView
+	    android:id="@+id/longpollscrollview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dp"
+	    android:layout_below="@+id/longpollnotification"
+	    android:layout_centerHorizontal="true" >
+	    <TextView
+	        android:id="@+id/longpolltext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="#FFFFFF" />
+	</ScrollView>
+	
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+	    android:key="connectionInformation" 
+	    android:title="@string/connectionInformation" >
+	   <EditTextPreference
+	        android:key="host"
+	    	android:title="@string/host"
+	    	android:summary="Host"
+	    	android:defaultValue="api.aercloud.aeris.com" />
+	   <EditTextPreference
+	       android:key="port"
+	       android:title="@string/port"
+	       android:summary="Port"
+	       android:defaultValue="80" />
+	   <CheckBoxPreference 
+	       android:key="secure" 
+	       android:summary="Use Https" 
+	       android:title="@string/secure" 
+	       android:defaultValue="true"/>
+	   <EditTextPreference
+	       android:key="baseURL"
+	       android:title="@string/baseURL"
+	       android:summary="URL of data feed location."
+	       android:defaultValue="v1" />
+	   <EditTextPreference 
+	       android:key="accountID"
+	       android:title="@string/accountID"
+	       android:summary="Account ID"
+	       android:defaultValue="1" />
+	   <EditTextPreference
+	       android:key="deviceID"
+	       android:title="@string/deviceID"
+	       android:summary="Device ID"
+	       android:defaultValue="scl-id" />
+	   <EditTextPreference
+	       android:key="feedID"
+	       android:title="@string/feedID"
+	       android:summary="Container ID"
+	       android:defaultValue="container-id" />
+	   <EditTextPreference
+	       android:key="apiKey"
+	       android:title="@string/apiKey"
+	       android:summary="API Key"
+	       android:defaultValue="3965e581-120d-11e2-8fb3-6362753ec2a5" />
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:key="timeIntervalsCategory"
+	    android:title="@string/timeIntervals" >
+	    <EditTextPreference
+	        android:key="feedTimeInterval"
+	        android:title="@string/feedTimeInterval"
+	        android:summary="Transfer time between each feed in ms."
+	        android:defaultValue="5000" />
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:key="debugPreferences"
+	    android:title="@string/debugPreferences" >
+		<CheckBoxPreference 
+		    android:key="debug"
+		    android:title="@string/debug"
+		    android:summary="Displays sensor output on screen."
+		    android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:key="queuePreferences"
+	    android:title="@string/queuePreferences" >
+		<EditTextPreference 
+		    android:key="lphost"
+		    android:title="@string/lphost"
+		    android:summary="Connection to Queue Service Host"
+		    android:defaultValue="longpoll.aercloud.aeris.com" />
+		<EditTextPreference 
+		    android:key="lpport"
+		    android:title="@string/lpport"
+		    android:summary="Connection to Queue Service Port"
+		    android:defaultValue="80" />
+	</PreferenceCategory>
+</PreferenceScreen>
